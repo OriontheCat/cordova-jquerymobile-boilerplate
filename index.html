@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  <meta charset="utf-8">
-  <title>phonegap & jquery mobile boilerplate</title>
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
 
-  <link rel="stylesheet"  href="css/jquery.mobile.structure.css" />
-  <link rel="stylesheet" href="css/jquery.mobile.theme.css" />
-  
+<head>
+  <meta charset="utf-8">
+  <title>period-countdown</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
   <script>
     var userAgent = navigator.userAgent + '';
     if (userAgent.indexOf('iPhone') > -1) {
@@ -21,32 +20,49 @@
       var mobile_system = '';
     }
   </script>
-  
+
   <script src="js/lib/jquery.js"></script>
   <!-- your scripts here -->
   <script src="js/app/app.js"></script>
   <script src="js/app/bootstrap.js"></script>
   <script src="js/lib/jquery.mobile.js"></script>
-  
-  </head>
-  <body>
-    
-    <div data-role="page">
+  <script type="text/javascript" src="js/lib/materialize.min.js"></script>
+</head>
 
-    	<div data-role="header">
-    		<h1>Single page</h1>
-    	</div><!-- /header -->
+<body>
 
-    	<div data-role="content">	
-    		<p>This is a single page boilerplate template that you can copy to build your first jQuery Mobile page. Each link or form from here will pull a new page in via Ajax to support the animated page transitions.</p>
-    		<p>This template is standard HTML document with a single "page"</p>
-    	</div><!-- /content -->
+  <div data-role="page">
 
-    	<div data-role="footer">
-    		<h4>Footer content</h4>
-    	</div><!-- /footer -->
+    <div data-role="header" class="header">
+      <h1>Period Countdown</h1>
+    </div>
+    <!-- /header -->
 
-    </div><!-- /page -->
-    
-  </body>
+    <div data-role="content">
+      <div class="row">
+    <div class="col s12 m6">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">Settings</span>
+        </div>
+        <div class="card-action">
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+      <p>More settings coming soon!</p>
+    </div>
+    <!-- /content -->
+
+    <div data-role="footer" class="footer">
+      <h4>Period Countdown Beta by Declan Li-Carney</h4>
+    </div>
+    <!-- /footer -->
+
+  </div>
+  <!-- /page -->
+
+</body>
+
 </html>
